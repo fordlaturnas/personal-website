@@ -395,6 +395,15 @@ h3, h4, li {
 
 
 /* ---------SECTIONS--------- */
+
+div#updated {
+    text-align: right;
+    width: 90%;
+	max-width: 1380px;
+	padding: 0 35px;
+	margin: 0 auto -15px;
+}
+
 section, div#download-cv-sect {
 	position: relative;
     width: 90%;
@@ -441,6 +450,7 @@ section ul.expandable-list li:nth-child(n+6) {
 section .seemore {
 	display: none;
 	color: var(--color-emphasis);
+    text-decoration: underline;
 	margin-top: 5px;
 	cursor: pointer;
 }
