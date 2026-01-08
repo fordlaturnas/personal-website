@@ -397,11 +397,14 @@ h3, h4, li {
 /* ---------SECTIONS--------- */
 
 div#updated {
-    text-align: right;
     width: 90%;
 	max-width: 1380px;
 	padding: 0 35px;
 	margin: 0 auto -15px;
+}
+
+div#updated p {
+    text-align: right;
 }
 
 section, div#download-cv-sect {
