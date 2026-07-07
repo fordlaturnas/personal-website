@@ -46,7 +46,7 @@
     </header>
 
     <div id="updated">
-      <p class="translatable" data-ES="Última actualización: Enero de 2026">Last updated: January 2026</p>
+      <p class="translatable" data-ES="Última actualización: Enero de 2026">Last updated: July 2026</p>
     </div>
 
     <section id="intro">
@@ -238,7 +238,7 @@
         <a target="_blank" href="https://congressin.com/" class="translatable" data-ES="aquí">here</a>.
         <span class="translatable" data-ES="También puede encontrar un video corto de demostración (6 min)">
           You can also see a short demo video (6 min)</span>
-        <a target="_blank" href="https://www.youtube.com/watch?v=6Hr7my0QR5c" class="translatable" data-ES="aquí">here</a>.
+        <a target="_blank" href="https://www.youtube.com/watch?v=RQTxsdhLO9s" class="translatable" data-ES="aquí">here</a>.
       </p>
 
       <h3 id="personal-website" class="translatable" data-ES="Este hermoso sitio web">This beautiful website</h3>
@@ -255,6 +255,30 @@
         <span class="translatable" data-ES="Si desea ver el código, puede acceder al repositorio público">
           If you wish to see the code, you can access the public repository</span>
         <a target="_blank" href="https://github.com/ariroffe/personal-website" class="translatable" data-ES="aquí">here</a>.
+      </p>
+
+      <h3 id="hnsubstacks" class="translatable" data-ES="hnsubstacks">hnsubstacks</h3>
+      <p class="translatable" data-ES="Un clon de Hacker News que lista los sitios web publicados allí. Uso la API de Algolia de HN 
+      para obtener historias de Substack buscando 'substack.com' en la URL. Hago esto a través de un worker de Cloudflare que tiene 
+      3 activadores cron separados: (1) obtiene historias nuevas cada 10 minutos y las guarda en un almacenamiento KV. (2) se ejecuta 
+      2 minutos después del primero, calcula las historias destacadas (hot stories) a partir de las nuevas simulando el algoritmo de 
+      puntuación de HN y las guarda en el KV. (3) Una vez cada hora obtiene las mejores historias (históricamente, ordenadas por puntos) 
+      y las guarda. Almaceno 300 historias nuevas (10 páginas de resultados) y 900 de las mejores (30 páginas). El frontend es un sitio 
+      estático (Svelte 5, sin Kit) que simplemente hace consultas al worker y muestra los resultados (paginados).">
+        A Hacker News clone that lists websites posted there. I use HN's Algolia API to fetch substack stories by searching for 
+        "substack.com" in the url. I do this via a CloudFlare worker that has 3 separate cron triggers: (1) fetches new stories 
+        every 10 minutes and saves them in a KV store. (2) runs 2 minutes after the first, computes hot stories from new ones by 
+        simulating HN's score algorithm, and stores in the KV. (3) Once every hour it fetches the best stories (historically, ordered 
+        by points) and saves. I store 300 new stories (10 pages of results) and 900 best (30 pages). The frontend is a static 
+        (Svelte 5, no Kit) site that just queries the worker and displays (paginated) results.
+      </p>
+      <p>
+        <span class="translatable" data-ES="Acceda">
+          Access it</span>
+        <a target="_blank" href="https://hnsubstacks.com/" class="translatable" data-ES="aquí">here</a>.
+        <span class="translatable" data-ES="Para más detalles, véase el repositorio público">
+        For more details, check the public repo</span>
+        <a  target="_blank" href="https://github.com/ariroffe/hnsubstacks/" class="translatable" data-ES="aquí">here</a>.
       </p>
 
       <h3 id="ciyne" class="translatable" data-ES="CIyNE Base de datos de películas">CIyNE Movie Database</h3>
